@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="" />
+<meta name="author" content="Cameron Wildey" />
+<meta name="copyright" content="" />
+<meta name="robots" content="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0" />
+	<title>Website Title</title>
+	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico" />
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/nav-style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/animate.min.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/tingle.min.css" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css' />
+
+<!--
+	CSS to adjust for IE10/11 
+-->
+<style>
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.navbar-light {
+		max-height: 80px;
+	}
+	.bg-dark{
+		max-height: 75px;
+	}
+	.myImage {
+		width: 85%;
+	}
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <!-- Nav -->
+        <nav id="navigation" class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" src="http://via.placeholder.com/160x50" class="d-inline-block alight-top" alt="Return to Home">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-lable="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-center w-100 text-uppercase">
+                    <li class="nav-item dropdown mx-xl-2 mx-0">
+                        <a class="nav-link" href="#" id="navbardrop" aria-haspopup="true" aria-expanded="false"> Products </a>
+                        <div class="dropdown-menu drop" aria-lablledby="navbardrop">
+                            <a class="dropdown-item" href="#"> Sample Product One </a>
+                            <a class="dropdown-item" href="#"> Sample Product Two</a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none d-lg-block mx-xl-2 mx-0"><a class="nav-link disabled" href="#"> | </a></li>
+                    <li class="nav-item dropdown mx-xl-2 mx-0">
+                        <a class="nav-link" href="#" id="navbardrop1" aria-haspopup="true" aria-expanded="false"> Solutions </a>
+                        <div class="dropdown-menu drop1" aria-lablledby="navbardrop1">
+                            <a class="dropdown-item" href="#"> Rapid eLearning </a>
+                            <a class="dropdown-item" href="#"> Virtual Classrooms </a>
+                            <a class="dropdown-item" href="#"> Web Conferencing </a>
+                            <a class="dropdown-item" href="#"> Marketing and Sales</a>
+                            <a class="dropdown-item" href="#"> Webinars and Events </a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none d-lg-block mx-xl-2 mx-0"><a class="nav-link disabled" href="#"> | </a></li>
+                    <li class="nav-item dropdown mx-xl-2 mx-0">
+                        <a class="nav-link" href="#" id="navbardrop2" aria-haspopup="true" aria-expanded="false"> Industries </a>
+                        <div class="dropdown-menu drop2" aria-lablledby="navbardrop2">
+                            <a class="dropdown-item" href="#"> Education </a>
+                            <a class="dropdown-item" href="#"> Financial Services </a>
+                            <a class="dropdown-item" href="#"> Government </a>
+                            <a class="dropdown-item" href="#"> Life Sciences </a>
+                            <a class="dropdown-item" href="#"> Manufacturing </a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none d-lg-block mx-xl-2 mx-0"><a class="nav-link disabled" href="#"> | </a></li>
+                    <li class="nav-item dropdown mx-xl-2 mx-0">
+                        <a class="nav-link" href="#" id="navbardrop3" aria-haspopup="true" aria-expanded="false"> Resources </a>
+                        <div class="dropdown-menu drop3" aria-lablledby="navbardrop3">
+                            <a class="dropdown-item" href="#"> Video Tutorials </a>
+                            <a class="dropdown-item" href="#"> Product Features </a>
+                            <a class="dropdown-item" href="#"> Customer Success Stories </a>
+                            <a class="dropdown-item" href="#"> Whitepapers </a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none d-lg-block mx-xl-2 mx-0"><a class="nav-link disabled" href="#"> | </a></li>
+                    <li class="nav-item dropdown mx-xl-2 mx-0">
+                        <a class="nav-link" href="#" id="navbardrop4" aria-haspopup="true" aria-expanded="false"> Services </a>
+                        <div class="dropdown-menu drop4" aria-lablledby="navbardrop4">
+                            <a class="dropdown-item" href="#"> Customer Training </a>
+                            <a class="dropdown-item" href="#"> Audio Options </a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none d-lg-block mx-xl-2 mx-0"><a class="nav-link disabled" href="#"> | </a></li>
+                    <li class="nav-item dropdown mx-xl-2 mx-0">
+                        <a class="nav-link" href="#" id="navbardrop5" aria-haspopup="true" aria-expanded="false"> Pricing </a>
+                        <div class="dropdown-menu drop5" aria-lablledby="navbardrop5">
+                            <a class="dropdown-item" href="#"> Product One Price </a>
+                            <a class="dropdown-item" href="#"> Product Two Price </a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none d-lg-block mx-xl-2 mx-0"><a class="nav-link disabled" href="#"> | </a></li>
+                    <li class="nav-item mx-xl-2 mx-0"><a class="nav-link" href="contact.html"> Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End of Nav -->
+    </header>
+    <!-- End of Header -->
+    <!-- Main -->
+    <main role="main">
+
+        <!-- Carousel -->
+        <div id="customeCarousel" class="carousel slide carousel-fade">
+            <ol class="carousel-indicators">
+                <li data-target="#customeCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#customeCarousel" data-slide-to="1"></li>
+                <li data-target="#customeCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div id="mainSlide" class="rslides banner-img carousel-item active">
+                    <div class="container-fluid py-5">
+                        <div class="row">
+                            <div class="col-xl-6 col-12 float-left">
+                                <div class="slide-card align-items-center">
+                                    <div class="card-body title scale-anm text-center">
+                                        <h3 class="card-title h1 white"> Product One </h3>
+                                        <img class="card-img-top myImage js-tingle-modal-1" src="http://via.placeholder.com/550x250" alt="" title="" />
+                                    </div>
+                                    <div class="card-footer-main text-center mb-2">
+                                        <a href="#" target="_blank" onclick="" class="btn btn-main shadow mx-1 mb-1"> View a Live Demo </a>
+                                        <a href="#" target="_blank" onclick="" class="btn btn-main shadow mx-1 mb-1"> Learn More </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End First Slide -->
+                <!-- Second Slide -->
+                <div id="secondarySlide" class="rslides banner-img one carousel-item">
+                    <div class="container-fluid py-5">
+                        <div class="row">
+                            <div class="col-xl-6 col-12 float-left">
+                                <div class="slide-card align-items-center">
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title white text-center h1"> Product Two </h3>
+                                        <img class="card-img-top myImage js-tingle-modal-2" src="http://via.placeholder.com/550x250" alt="" title="" />
+                                    </div>
+                                    <div class="card-footer-main text-center mb-2">
+                                        <a href="#" target="_blank" onclick="" class="btn btn-main shadow mx-1 mb-1"> Learn More </a>
+                                        <a href="#" target="_blank" onclick="" class="btn btn-main shadow mx-1 mb-1"> View a Live Demo </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Second Slide -->
+                <!-- Third Slide -->
+                <div id="secondarySlide" class="rslides banner-img two carousel-item">
+                    <div class="container-fluid">
+                        <div class="row p-xl-8 align-items-center">
+                            <div class="col-xl-6 col-12 float-left">
+                                <div class="slide-card align-items-center">
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title h1 white"> Our Companies Difference </h3>
+                                        <p class="white mb-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+                                        <p class="white mb-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+                                    </div>
+                                    <div class="card-footer-main text-center mb-2">
+                                        <button type="button" class="btn neutered btn-main mx-1 mb-1" style="opacity:1;" disabled> Register for our live demo! </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Third Slide -->
+            </div>
+            <!--End Carousel Inner -->
+        </div>
+        <!-- End Carousel -->
+        <!-- Main Products -->
+        <section class="bg-product p-2">
+            <div class="container-fluid w-75 my-1">
+                <div class="row justify-content-center d-flex">
+                    <div class="col text-uppercase text-center my-1">
+                        <a href="#" target="_blank" onclick="" class="btn btn-product">Main Product</a>
+                    </div>
+                    <div class="col text-uppercase text-center my-1">
+                        <a href="#" target="_blank" onclick="" class="btn btn-product">Secondary Product</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Main Products -->
+        <!-- First Content -->
+        <section>
+            <div class="container-fluid w-75 margin-30" data-auto-height="true">
+                <div class="row justify-content-around justify-content-md-center flex-row">
+                    <div class="col-xl-3 col-md-6 col-12 mb-4 mt-2">
+                        <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".6s">
+                            <div class="card round shadow align-items-center" data-height="height">
+                                <a href="#" class="card-img-top" onclick=""><img class="card-img-top round-img" src="http://via.placeholder.com/240x150" alt="Sign up for a live demonstration"></a>
+                                <div class="card-body text-center">
+                                    <p class="card-text small mx-1"> Sign up for a live demonstration, weekdays at 10:30 am. Click below to see full schedule.</p>
+                                </div>
+                                <div class="card-footer-main text-center mb-2">
+                                    <a href="#" target="_blank" onclick="" class="btn blue-btn mx-1 mb-1">Product One</a>
+                                    <a href="#" target="_blank" onclick="" class="btn blue-btn mx-1">Product Two</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12 mb-4 mt-2">
+                        <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".7s">
+                            <div class="card round shadow align-items-center" data-height="height">
+                                <a href="connect_pro_trial.php" class="card-img-top" onclick=""><img class="card-img-top round-img" src="http://via.placeholder.com/240x150" alt=""></a>
+                                <div class="card-body text-center">
+                                    <p class="card-text small mx-1"> Register for a free product trial and see for yourself how it works! </p>
+                                </div>
+                                <div class="card-footer-main text-center mb-2">
+                                    <a href="#" target="_blank" onclick="" class="btn blue-btn mx-1 mb-1">Product One</a>
+                                    <a href="#" target="_blank" onclick="" class="btn blue-btn mx-1">Product Two</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12 mb-4 mt-2">
+                        <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".8s">
+                            <div class="card round shadow align-items-center" data-height="height">
+                                <a href="#" class="card-img-top" onclick=""><img class="card-img-top round-img" src="http://via.placeholder.com/240x150" alt=""></a>
+                                <div class="card-body text-center">
+                                    <p class="card-text small mx-1"> If you are an existing customer, you are eligible for free product training every weekday </p>
+                                </div>
+                                <div class="card-footer-main text-center mb-2">
+                                    <a href="#" target="_blank" onclick="" class="btn blue-btn mx-1 mb-1">Sign Up Today</a>
+                                    <a href="#" target="_blank" onclick="" class="btn blue-btn-sm mx-1">Company Difference</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12 mb-4 mt-2">
+                        <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".9s">
+                            <div class="card round shadow align-items-center" data-height="height">
+                                <a href="video-tutorials.html" class="card-img-top" onclick=""><img class="card-img-top round-img" src="http://via.placeholder.com/240x150" alt=""></a>
+                                <div class="card-body text-center">
+                                    <p class="card-text small mx-1"> Join us and view our product tutorials </p>
+                                </div>
+                                <div class="card-footer-main text-center mb-2">
+                                    <a href="#" target="_blank" onclick="" class="btn blue-btn mx-1 mb-1"> Product One Videos</a>
+                                    <a href="#" target="_blank" onclick="" class="btn blue-btn-sm mx-1"> Product Two Videos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Top Content -->
+        <!-- Secondary Content -->
+        <section class="middle">
+            <div class="layer py-5">
+                <div class="container mb-1">
+                    <div class="row justify-content-center d-flex">
+                        <div class="col-xl-8 col-md-6 text-left my-1 mt-4">
+                            <!-- Newsletter  -->
+                            <h5 class="white"> Subscribe</h5>
+                            <p class="white"> Get the latest updates</p>
+
+                            <form class="form-inline" method="post" action="#" role="form">
+                                <label class="sr-only" for="email">Email Address</label>
+                                <input type="email" name="email" class="form-control mb-2 mr-sm-2" placeholder="Email Address..." required>
+                                <button type="submit" class="btn btn-secondary text-uppercase mb-2">Submit</button>
+                            </form>
+                            <!-- //Newsletter  -->
+                        </div>
+                        <div class="col-xl-4 col-md-6 text-left my-1">
+                            <h5 class="white">News and Updates</h5>
+                            <p>• <a href="#">What's New In Product One</a></p>
+                            <p>• <a href="#">What's New In Product Two</a></p>
+                            <h5 class="white">Upcoming Events</h5>
+                            <p>• <a href="#">Take a Tour of Product One</a></p>
+                            <p>• <a href="#">Evertyhing Product Two</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Secondary Content -->
+        <!-- Final Content -->
+        <section class="services py-3 my-lg-5">
+            <div class="container-fluid w-75">
+                <div class="row mt-md-2 mt-sm-5 mt-5">
+                    <div class="col-md-7">
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <h3 class="text-capitalize">Our Difference</h3>
+                            <p class="para text-capitalize font-italic">An amplified cutstomer experience at no exrta cost..</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <div class="mt-4">
+                                <a href="#" class="btn btn-primary text-capitalize">Chat Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mt-lg-0 mt-sm-5 mt-5">
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".2s">
+                            <iframe>
+                                src="https://www.youtube.com/watch?v=XQu8TTBmGhA"
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Final Content -->
+        <!-- Footer Branding -->
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-lg-7 col-md-9 col-12">
+                    <div class="footer-nav">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#">Products</a></li>
+                            <li class="nav-item"><a href="#">Solutions</a></li>
+                            <li class="nav-item"><a href="#">Industries</a></li>
+                            <li class="nav-item"><a href="#">Resources</a></li>
+                            <li class="nav-item"><a href="#">Services</a>
+                            <li class="nav-item"><a href="#">Pricing</a></li>
+                            <li class="nav-item"><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <p class="copy">&copy; Copyright 2018 Cameorn Wildey </p>
+                        <p class="copy"> <a href="privacy.html">Privacy Policy</a> / <a href="#">Terms</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Branding -->
+    </main>
+    <!-- End of Main Content -->
+    <!-----------------------------
+    ---------Modal Video----------
+    ------------------------------>
+    <!-- Video One -->
+    <div class="tingle-display modal-vid-1">
+        <p class="h1"> Product One </p>
+        <br />
+        <iframe>
+            src="https://www.youtube.com/watch?v=XQu8TTBmGhA"
+        </iframe>
+    </div>
+    <!-- End Video One -->
+    <!-- Video Two -->
+    <div class="tingle-display modal-vid-2">
+        <p class="h1"> Product Two </p>
+        <br />
+        <iframe>
+            src="https://www.youtube.com/watch?v=XQu8TTBmGhA"
+        </iframe>
+    </div>
+    <!-- End Video Two -->
+    <!-----------------------------
+    ------End of Modal Video------
+    ------------------------------>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/components/jquery.wow.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/components/wow.min.js"></script>
+    <script src="jquery.bcSwipe.min.js"></script>
+    <script src="js/tingle..min.js"></script>
+    <script src="js/modal.min.js"></script>
+    <script src="js/mobile.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+            document.write('<script src="js/ieOnly.js"><\/script>');
+    </script>
+
+    <script>
+        $('.carousel').carousel({
+            interval: 6000,
+            pause: "hover"
+        });
+        $('.carousel').bcSwipe({ threshold: 50 });
+    </script>
+
+</body>
+</html>
