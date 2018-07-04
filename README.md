@@ -1,4 +1,4 @@
-# Bootstrap-Home-Page
+# Bootstrap Template
 Work in progress Bootstrap Template
 
 This is a work in progress Bootstrap Template that will have multiple pages and will act as a working business
